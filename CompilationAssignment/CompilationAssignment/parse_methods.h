@@ -1,0 +1,17 @@
+void parse_Program();
+void parse_task_Definitions();
+void parse_task_Definitions2();
+void parse_task_Definition();
+void parse_task_List();
+void parse_task_List2();
+void parse_Declarations();
+void parse_Declarations2();
+void parse_Declaration();
+void parse_Declaration2();
+void parse_Commands();
+void parse_Commands2();
+void parse_Command();
+void parse_Expression();
+void parse_Condition();
+void parse_Param_List();
+void parse_Param_List2();

@@ -1,0 +1,320 @@
+﻿Build started Thu 25.05.17 9:25:03 AM.
+     1>Project "C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\CompilationAssignment\CompilationAssignment\CompilationAssignment.vcxproj" on node 2 (build target(s)).
+       Project file contains ToolsVersion="12.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
+     1>InitializeBuildStatus:
+         Touching "Debug\CompilationAssignment.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\FLEX\lex.yy.c
+         lex.yy.c
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(28): warning C4005: 'EOF' : macro redefinition
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(52) : see previous definition of 'EOF'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(60): error C2084: function 'token NextToken()' already has a body
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(59) : see previous definition of 'NextToken'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(81): error C2084: function 'token BackToken()' already has a body
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(80) : see previous definition of 'BackToken'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54): error C2374: 'counter' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(54) : see declaration of 'counter'
+     1>C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188): warning C4005: 'BEGIN' : macro redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(17): warning C4005: 'BEGIN' : macro redefinition
+                 C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\FLEX\flexskel.cc(188) : see previous definition of 'BEGIN'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37): error C2011: 'token' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(37) : see declaration of 'token'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45): error C2011: 'Node' : 'struct' type redefinition
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(45) : see declaration of 'Node'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): error C2374: 'curIndex' : redefinition; multiple initialization
+                 c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53) : see declaration of 'curIndex'
+     1>c:\users\daniel\desktop\compi v2\compi_yoni_dani\flex\compilation1.h(53): fatal error C1003: error count exceeds 100; stopping compilation
+     1>Done Building Project "C:\Users\Daniel\Desktop\Compi v2\Compi_Yoni_Dani\CompilationAssignment\CompilationAssignment\CompilationAssignment.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.34

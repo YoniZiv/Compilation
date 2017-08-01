@@ -1,0 +1,17 @@
+Students ids:
+1. 305229494
+2. 206087439
+
+Students names:
+1. Daniel Tamir
+2. Yonatan Ziv
+
+Operating system:
+Windows10 - 64Bit
+
+Development enviroment:
+Visual Studio 13
+
+Our program based on linked list , every time the compiler finds a token from the defined tokens it prints it into the file and pushs it into the linked
+list with the defined values ( line , value ,  sign ), our program supports selection of the files in the beginning , this way the user can choose
+which file to test :)
