@@ -34,8 +34,8 @@ DIGIT [0-9]
 "-"                                                     { CreateAndStoreToken(SUBTRUCTION,yytext,line); return 1 ;} 	
 "*"                                                     { CreateAndStoreToken(MULTIPLICATION,yytext,line); return 1 ;} 	
 "/"                                                     { CreateAndStoreToken(DIVISION,yytext,line); return 1 ;} 	 
-"PARBEGIN" 	                                            { CreateAndStoreToken(PARBEGIN,yytext,line); return 1 ;}
-"PAREND" 	                                            { CreateAndStoreToken(PAREND,yytext,line); return 1 ;}
+"parbegin" 	                                            { CreateAndStoreToken(parbegin,yytext,line); return 1 ;}
+"parend" 	                                            { CreateAndStoreToken(parend,yytext,line); return 1 ;}
 "task"  	                                            { CreateAndStoreToken(TASK,yytext,line); return 1 ;}
 "BEGIN"  	                                            { CreateAndStoreToken(BEGIN,yytext,line); return 1 ;}
 "end" 	                                                { CreateAndStoreToken(END,yytext,line); return 1 ;}
@@ -60,43 +60,76 @@ DIGIT [0-9]
 void parse_Program()
 {
 	yyout=fopen("c:\\temp\\test_305229494_206087439_lex.txt","w");
-	printf("* RULE 1 * : PROGRAM -> TASK_DEFINITIONS; PARBEGIN TASK_LIST PAREND \n");
+	fprintf(yyout,"* RULE 1 * : PROGRAM -> TASK_DEFINITIONS; parbegin TASK_LIST parend \n");
+	
+	Token t - next_token();
 	parse_task_Definitions();
-	// TODO : 
-	while(match(SEMICOLON)){}
-	while(match(PARBEGIN)){}
-	parse_task_List();
-	match(PAREND);
+	switch(t->lex)
+	{
+		case SEMICOLON:
+		{
+			match(SEMICOLON);
+			match(parbegin);
+			parse_task_List();
+			match(parend);
+			break;
+		}
+		default:
+		{
+			fprintf(yyout,"ERROR: unknown token\n");
+		}
+	}
 }
 
 void parse_task_Definitions()
 {
-	printf("* RULE 2 * TASK_DEFINITIONS -> TASK_DEFINITION ; TASK_DEFINITIONS2 \n");
-	parse_task_Definition();
-	while(match(SEMICOLON)){}
-	parse_task_Definitions2();
+	fprintf("* Rule 2* TASK_DEFINITIONS -> TASK_DEFINITION TASK_DEFINITIONS2\n");
+			parse_task_Definition();
+			parse_task_Definitions2();		
+	}
 }
 
 void parse_task_Definitions2(){
-	printf("* RULE 3 * TASK_DEFINITIONS2 -> TASK_DEFINITION | NULL \n");
-	int token1 = next_token();
-	if(token1->lex == "task"){
-		token1 = back_token();
-		parse_task_Definitions();
-	}else{
-		// the parsing will continue to other rules 
+	fprintf("* Rule 3 * TASK_DEFINITIONS -> ;TASK_DEFINITION TASK_DEFINITIONS2 | epsilon \n");
+	Token t = next_token();
+	switch(t->lex)
+	{
+		case SEMICOLON:
+		{
+			parse_task_Definition;
+			parse_task_Definitions2;
+		}
+		default:
+		{
+			back_token();
+		}
 	}
 }
 
 void parse_task_Definition()
 {
 	printf("* RULE 4 * TASK_DEFINITION -> task id BEGIN DECLARATIONS { COMMANDS } \n");
-	match(task);
-	match(id);
-	match(BEGIN);
-	parse_Declarations();
-	parse_Commands();
-	match(end);
+	Token t = next_token();
+	
+	switch(t->lex)
+	{
+		case "task":
+		{
+			match("id");
+			match("begin");
+			parse_Declaration();
+			match("{");
+			parse_Commands();
+			match("}");
+			match("end");
+			match(SEMICOLON);
+			
+		}
+		default:
+		{
+			fprintf(yyout,"ERROR: unknown token\n");
+		}
+	}
 }
 
 void parse_Declarations()
