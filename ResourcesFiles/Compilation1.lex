@@ -134,7 +134,7 @@ void parse_task_Definition()
 
 void parse_Declarations()
 {
-	printf("* RULE 5 * DECLARATIONS -> DECLARATION ; DECLARATIONS2 \n");
+	fprintf(yyout,"* RULE 5 * DECLARATIONS -> DECLARATIONS2 \n");
 	parse_Declaration();
 	parse_Declarations2();
 	
@@ -142,154 +142,245 @@ void parse_Declarations()
 
 void parse_Declarations2()
 {
-	printf("* RULE 6 * DECLARATIONS2 -> DECLARATIONS | NULL \n");
-	parse_Declarations();
+	fprintf(yyout,"* RULE 6 * DECLARATIONS2 -> ; DECLARATIONS | Epsilon \n");
+	token t = next_token();
+	switch(t->lex)
+	{
+		case SEMICOLON:
+		{	
+			parse_Declarations;
+			break;
+		}
+		default:
+		{
+			back_token();
+			break;
+		}
+	}
 }
 
 void parse_Declaration()
 {
-	printf("* RULE 7 * DECLARATION -> DECLARATION2 id \n");
-	parse_Declaration2();
-	match(id);
-}
-
-void parse_Declaration2()
-{
-	printf("* RULE 8 * DECLARATION -> ");
-	next_token();
-	switch(token.type)
+	fprintf(yyout,"* RULE 7 * DECLARATION -> integer id | real id	\n");
+	token t = next_token();
+	switch(t->lex)
 	{
-		case integer:
-			printf("integer \n");
-			////
-		case real:
-			printf("real \n");
-			///
-		default:
-			///
-		
-	}
-}
-
-void parse_task_List()
-{
-	printf("* RULE 9 * TASK_LIST -> task_id\n");
-	while(match(task_id)){}
-	while(match(SEMICOLON)){}
-	parse_task_List2();
-}
-
-void parse_task_List2()
-{
-	printf("* RULE 10 * TASK_LIST2 -> TASK_LIST | task_id \n");
-	while(match(||)){}
-
-	next_token();
-	switch(token.type)
-	{
-		case task_id:{
-			back_token();
-			parse_task_List();
+		case 'integer':
+		{
+			match('id');
+			break;
+		}
+		case 'real':
+		{
+			match('id');
+			break;
 		}
 		default:
-			// do nothing but continue to ohter rules 
+		{
+			fprintf(yyout,"ERROR: unknown token\n");
+		}
 	}
 }
+
+
+
+void parse_Task_List()
+{
+	fprintf(yyout, "* RULE 8 * TASK_LIST -> task_id TASK_LIST2 \n");
+	token t = next_token();
+	switch(t->lex)
+	{
+		case 'task_id':
+		{
+			parse_Param_List2();
+			break;
+		}
+		default:
+		{
+			fprintf(yyout,"ERROR: unknown token\n");
+			break;
+		}
+	} 
+}
+
+
+void parse_Task_List2()
+{
+	fprintf(yyout,"* RULE 8 * Task_List2 -> || task_id Task_List2 | Epsilon \n");
+	token t = next_token();
+	switch(t->lex)
+	{
+		case '||':
+		{
+			match('task_id');
+			parse_Task_List2();
+			break;
+		}
+		default:
+		{
+			back_token();
+			break;
+		}
+	}
+}
+
 
 void parse_Commands()
 {
-	printf("* RULE 11 * PARSE_COMMANDS -> PARSE_COMMAND ; PARSE_COMMANDS2 \n");
+	fprintf(yyout,"* RULE 9 *Commands -> Command Commands2 \n");
 	parse_Command();
-	parse_Commads2();
+	parse_Commands2();
 }
 
 void parse_Commads2()
 {
-	printf("* RULE 12 * PARSE_COMMANDS2 -> PARSE_COMMANDS | NULL \n");
-	parse_Commands();
+	fprintf(yyout,"* RULE 10 * Commands2 -> ; Command | Epsilon \n");
+	token t = next_token();
+	switch(t->lex)
+	{
+		case SEMICOLON:
+		{
+			parse_Command();
+			break;
+		}
+		default:
+		{
+			back_token();
+			break;
+		}
+		
+	}
 		
 }
 
 void parse_Command()
 {
-	printf("* RULE 13 * PARSE_COMMAND -> \n");
-	next_token();
-	switch(token.type)
+	fprintf(yyout,"* RULE 11 * COMMANd -> id = EXPRESIION | do COMMANDS until CONDITION od | send task_id . signal_id (PARAM_LIST) | accept signal_id (DECLARATIONS) | begin DECLARATIONS {COMMANDS} end \n");
+	token t = next_token();
+	switch(t->lex)
 	{
-		case id:
+		case 'id':
 		{			
+			match("=");
 			parse_Expression();
+			break;
 		}
-		case do:
+		case 'do':
 		{
 			parse_Commands();
-			match(until);
+			match('until');
 			parse_Condition();
-			match(od);
+			match('od');
 		}
-		case send:
+		case 'send':
 		{
-			match(task_id );
-			match(dot);
-			match(signal_id );
-			match(left_bracket );
+			match('task_id');
+			match('.');
+			match('signal_id');
+			match('(' );
 			parse_Param_List();
-			match(right_bracket );
+			match(')');
 		}
-		case accept:
+		case 'accept':
 		{
-			match(signal_id );
-			match(left_bracket );
+			match('signal_id');
+			match('(');
 			parse_Declarations();
-			match(right_bracket );
+			match(')');
 		}
-		case BEGIN:
+		case 'begin':
 		{
 			parse_Declarations();
-			match(left_curly_bracket);
+			match('{');
 			parse_Commands();
-			match(right_curly_bracket );
-			match(end );
+			match('}');
+			match('end');
+		}
+		default:
+		{
+			fprintf(yyout,"ERROR: unknown token\n");
+			break;
 		}
 	}
 }
 
 void parse_Param_List()
 {
+	fprintf(yyout,"* RULE 12 * Param_List -> EXPRESSION  Param_List2 \n");
 	parse_Expression();
-	match(comma );
 	parse_Param_List2();
 }
 
 void parse_Param_List2()
 {
-	parse_Param_List();
+	fprintf(yyout,"* RULE 13 * Param_List2 -> , Param_List | Epsilon  \n");
+	token t = next_token();
+	switch(t->lex)
+	{
+		case ',':
+		{
+			parse_Param_List();
+			break;
+		}
+		default:
+		{
+			back_token();
+			break;
+		}
+	}
 }
 
 void parse_Expression()
 {
-	next_token();
-	switch(token.type)
+	fprintf(yyout,"* RULE 14 * Expression -> id Expression2 | int_num | real_num \n");
+	token t = next_token();
+	switch(t->lex)
 	{
 		case int_num:
-			///
+		{
+			break;
+		}
 		case real_num:
-			///
+		{
+			break;
+		}
 		case id:
 		{
-			match(binary_ar_op);
-			parse_Expression();
+			parse_Expression2();
+		}
+		default:
+		{
+			fprintf(yyout,"ERROR: unknown token\n");
+			break;
 		}
 	}	
 }
 
+void parse_Expression2(){
+	fprintf(yyout,"* RULE 15 * Expression2 -> binary_ar_op Expression | Epsilon \n");
+	token t = next_token();
+	switch(t->lex)
+	{
+		case 'binary_ar_op':
+		{
+			parse_Expression();
+			break;
+		}
+		default:
+		{
+			back_token();
+		}
+	}
+}
+
 void parse_Condition()
 {
-	match(left_bracket );
-	match(id );
-	match(rel_op );
-	match(id );
-	match(right_bracket );
+	fprintf(yyout,"* RULE 16 * CONDITION -> (id  rel_op  id)   \n");
+	match('(');
+	match('id');
+	match('rel_op');
+	match('id');
+	match(')');
 }
 
 void match(int type) {
